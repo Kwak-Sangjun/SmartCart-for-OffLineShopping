@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="java.mapper.ProductMapper">
+
+
+	<select id="selectProduct" parameterType="product" resultType="product">
+		select * from product where pBarcode = #{pBarcode}
+	</select>
+	
+	<select id="selectProductList" parameterType="string" resultType="product">
+		select * from product where pName like CONCAT('%',#{string},'%') or pCategory like CONCAT('%',#{string},'%')
+	</select>
+
+
+</mapper>

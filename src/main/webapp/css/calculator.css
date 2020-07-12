@@ -1,0 +1,95 @@
+calculator.css
+
+div#main {
+   position: absolute;
+   left: 190px;
+   top: 98px;
+   bottom: 30px;
+}
+
+table, tbody, tr, td, button {
+  margin: 0;
+  padding: 0;
+}
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: #333;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 209px;
+  margin: -240px 0px 30px 500px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.input-box {
+  position: relative;
+  width: 210px;
+  height: 80px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #202020;
+}
+.show-box {
+  color: #757575;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#numInput {
+  position: absolute;
+  left: 7px;
+  bottom: 5px;
+  display: inline-block;
+  padding: 3px;
+  width: 94%;
+  height: 55px;
+  color: #fff;
+  text-align: right;
+  font-size: 50px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #202020;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+button.number {
+  background-color: #efefef;
+}
+button.number:hover {
+  background: #ddd;
+}
+button.number:active {
+  background-color: #ccc;
+}
+button.enter {
+  background-color: #efefef;
+}
+button.enter:hover {
+  background: #ddd;
+}
+button.enter:active {
+  background-color: #ccc;
+}
+button.op {
+  background-color: #FF9B22;
+}
+button.op:hover {
+  background-color: #f99112;
+}
+button.op:active {
+  background-color: #EB7016;
+}
+.col2 button {
+  width: 140px;
+}
+.col3 button {
+  height:70px;
+  width: 210px;
+}

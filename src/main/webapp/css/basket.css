@@ -1,0 +1,62 @@
+basket.css
+
+div#main {
+   position: absolute;
+   left: 190px;
+   top: 93px;
+}
+/* 공통옵션 */
+ul li {list-style:none; 
+margin: 0;  padding: 0; }
+ul{margin: 0;  padding: 0;}
+.fl {float:left; }
+.tc {text-align:center; }
+
+/* 게시판 목록 */
+.board {width: 750px;}
+.w70 {width:60px; }
+.w500 {width:410px; }
+.w120 {width:170px; }
+.w100 {width:100px; }
+
+.w570 {width:530px; }
+.w220 {width:212px; }
+.title {
+   height: 40px;
+   line-height: 40px;
+   background:#F7D358;
+   font-weight: bold;
+   border: 0.5px #848484 solid; 
+}
+.t_line {border:solid 0.5px #848484;}
+.lt_line {border:solid 0.5px #848484;}
+.list {
+   height: 40px;
+   line-height: 40px;
+    background:#F5F6CE;
+}
+.list:nth-child(odd) {
+ background:#F7D358;
+}
+div#backlist{
+   position: absolute;
+   left:21%;
+   top:120px;
+   
+}
+div#blist{
+   position: absolute;
+   left:21%;
+   top:120px;
+}
+div#plist{
+   width:750px;
+   overflow:auto;
+   height: 285px;
+   top:120px;
+}
+div#btndiv{
+	position: absolute;
+	left: 380px;
+	top: 380px;
+}
