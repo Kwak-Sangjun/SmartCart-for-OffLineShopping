@@ -23,7 +23,7 @@ public class FindLocationCategory {
 	
 	public void init() {
 		map= new HashMap<>();
-		Properties pro = new Properties(); // 명령어와 처리 클래스의 매핑 정보 저장 용도
+		Properties pro = new Properties();
 		FileInputStream f=null;
 		try {
 			 f=new FileInputStream(resourceLoader.getResource("classpath:whereCategory.properties").getURI().getPath());
