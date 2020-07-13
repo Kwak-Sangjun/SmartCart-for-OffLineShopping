@@ -28,7 +28,7 @@ public class ProductController {
 	@Autowired
 	private ProductDao dao;
 	@Autowired
-	private FindLocationCategory svc;
+	private FindLocationCategory flc;
 	@Autowired
 	private BuzzerServerSocket bcs;
 	@Autowired
@@ -73,7 +73,7 @@ public class ProductController {
 	
 	@GetMapping("where")
 	public String where(Model model, @RequestParam(name="category") String category) {
-		Map<String,String> map = svc.getMap();
+		Map<String,String> map = flc.getMap();
 		map.forEach((key,value)->{
 			if(key.equals(category)) {
 				String[] location=value.split(",");
